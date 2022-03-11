@@ -819,18 +819,14 @@ width: 90%;
     }
     .container-buttons {
         flex-direction: column;
+        margin-bottom: 20px;
     }
     .container-buttons a {
         width: 200px;
         margin: 5px;
     }
     .hero {
-        height: 112vh;
+        height: unset;
     }
 }
 
-@media(max-width:340px){
-   .hero {
-       height: 120vh;
-   }
-}
