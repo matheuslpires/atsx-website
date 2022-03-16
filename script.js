@@ -5,7 +5,6 @@ function showRight(){
     document.querySelector('.carousel-content').style.left= '-620px'
 }
 
-
 var scrollDown = document.getElementById("scroll-down")
 window.addEventListener("scroll", function() {
     if (window.pageYOffset > 50) {
@@ -16,14 +15,16 @@ window.addEventListener("scroll", function() {
     
 })
 
+var mobileMenu = document.querySelector(".mobile-menu")
+var clickButton = document.querySelector(".navigation")
+var clickOff = document.querySelector(".navigation-off")
+clickButton.addEventListener("click",function() {
+    mobileMenu.classList.add("mobile-menu-show")
+}
 
-// $(function() {
-//     $(window).on("scroll", function() {
-//         if($(window).scrollTop() > 10) {
-//             $("#scroll-down").addClass("scroll-down");
-//         } else {
-//             //remove the background property so it comes transparent again (defined in your css)
-//            $("#scrol-down").removeClass("scroll-down");
-//         }
-//     });
-// });
+)
+clickOff.addEventListener("click",function(){
+    mobileMenu.classList.remove("mobile-menu-show")
+}
+)
+
